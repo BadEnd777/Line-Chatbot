@@ -34,7 +34,7 @@ app.post('/webhook', line.middleware(config), async (req, res) => {
         const files = await fs.promises.readdir(path.join(__dirname, 'events'));
         for (const file of files) {
             const command = require(path.join(__dirname, 'events', file));
-            if (command.name === event.type) {
+            if (command.type === event.type) {
                 await command.execute(client, event);
             }
         }
