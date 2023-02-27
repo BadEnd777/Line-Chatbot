@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 
 module.exports = {
-    name: 'message',
+    type: 'message',
 
     async execute(client, event) {
         try {
