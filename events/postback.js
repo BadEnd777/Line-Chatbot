@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 
 module.exports = {
-    name: 'postback',
+    type: 'postback',
 
     async execute(client, event) {
         try {
