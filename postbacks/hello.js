@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'hello',
+    data: 'hello',
 
     async execute(client, event) {
         await client.replyMessage(event.replyToken, {
